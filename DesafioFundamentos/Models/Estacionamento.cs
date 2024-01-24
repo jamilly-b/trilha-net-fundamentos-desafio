@@ -1,5 +1,3 @@
-using Microsoft.Win32.SafeHandles;
-
 namespace DesafioFundamentos.Models
 {
     public class Estacionamento
@@ -19,8 +17,8 @@ namespace DesafioFundamentos.Models
         // Método para adicionar um veículo ao dicionário
         public void AdicionarVeiculo()
         {
-            Console.WriteLine("Digite a placa do veículo para estacionar:");
             DateTime horarioEntrada = DateTime.Now;
+            Console.WriteLine("Digite a placa do veículo para estacionar:");
             try{
                 string placa = Console.ReadLine();
                 veiculos.Add(placa.ToUpper(), horarioEntrada);
