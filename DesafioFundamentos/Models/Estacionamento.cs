@@ -19,8 +19,8 @@ namespace DesafioFundamentos.Models
         {
             DateTime horarioEntrada = DateTime.Now;
             Console.WriteLine("Digite a placa do veículo para estacionar:");
+            string placa = Console.ReadLine();
             try{
-                string placa = Console.ReadLine();
                 veiculos.Add(placa.ToUpper(), horarioEntrada);
                 Console.WriteLine("Veículo adicionado com sucesso.\n");
             }
