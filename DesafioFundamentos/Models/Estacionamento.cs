@@ -39,9 +39,8 @@ namespace DesafioFundamentos.Models
             if (veiculos.ContainsKey(placa))
             {
                 // Recebe a hora que foi solicitado para remover o veículo e calcula o tempo que passou estacionado.
-                DateTime horarioSaida;
+                DateTime horarioSaida = DateTime.Now;
                 DateTime horarioEntrada = veiculos[placa];
-                horarioSaida = DateTime.Now;
                 TimeSpan tempoEstacionado = horarioSaida - horarioEntrada;
                 
                 // Calcula o valor final de acordo com o tempo que o veículo ficou estacionado
